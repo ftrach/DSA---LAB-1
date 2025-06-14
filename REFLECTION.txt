@@ -1,0 +1,23 @@
+This was my first hands-on expeirnece using the language of Python in a structured lab environment and it was intuitive  !
+
+One of the things I really enjoyed about Python was how clean and readable the syntax is  . 
+
+Un-like C/C++  ,  there's no need to declare variable types or write extensive code like headers or main functions to get started  !  I feel this made writing functions feel quicker and with less clutter  !
+
+What I dis - liked was the at the beginning was the last of strict typing  !  When using C++  ,  I am used to knowing the data type I am dealing with  which can help prevent certain bugs  !
+
+In Python  ,  because of it's dynamic typing  ,  I had to be more cautious when writing code that does not specifically depend on exact data types  !  Even though this is the case,  I still started to appreciate this flexibility that Python offers when I got more comfort with it  !
+
+One behaviour that was very surprising to me was how Python handles indentation  !  In C++  ,  Indentaiton is optional and mostly for readability  ,  but in Python  ,  it's part of the actual syntax of the code  !  
+
+If you forget to indent properly,  it can cause errors  .  This lead to be be more careful  when it comes to being prices with formatting  .
+
+In terms of what is similar,  both Python and C++ support things like functions, loops, and conditionals.  The logic as a result is similar. It felt as if however Python handles lists and object in a much simpler way and it required much less l lines of code in comparison to C++  ! 
+
+The object-oriented aspect of Python such as class inheritance was also similar to C++ which made it much easier to understand how to implement both the UpCounter and DownCounter classes  !
+
+Overall Python I feel made it easier to focus on the actua llogic of the program rahter than  tehcnical details of moemry management or type declerations  !  
+
+This lab gave me an overview of how Pythn's simplicity and Power can make it a strong tool for solving problems quickly, especially in educational contexts  !
+
+I also ran this code using ' Python Applicatoin ' via GitHub Actions to test the code and all tests rean successfully and fully passed  !  

@@ -1,0 +1,40 @@
+# NAME OF THE WORKFLOW THAT WILL SHOW UP IN THE ACTIONS TAB
+name: PYTHON APPLICATION
+
+# SPECIFY THE EVENTS THAT WILL TRIGGER THIS WORKFLOW
+on:
+  push:
+    branches: [ "main" ]  # TRIGGERS WHEN PUSHING TO MAIN BRANCH
+  pull_request:
+    branches: [ "main" ]  # TRIGGERS WHEN A PULL REQUEST TARGETS MAIN
+
+# PERMISSIONS FOR THE GITHUB TOKEN USED IN THIS WORKFLOW
+permissions:
+  contents: read
+
+# DEFINE JOBS THAT WILL RUN AS PART OF THIS WORKFLOW
+jobs:
+  build:
+    # SPECIFY THE TYPE OF RUNNER TO USE (UBUNTU LINUX LATEST VERSION)
+    runs-on: ubuntu-latest
+
+    steps:
+    # STEP 1: CHECK OUT THE REPOSITORY CODE INTO THE RUNNER
+    - uses: actions/checkout@v4
+
+    # STEP 2: SET UP PYTHON ENVIRONMENT (VERSION 3.10)
+    - name: SET UP PYTHON 3.10
+      uses: actions/setup-python@v3
+      with:
+        python-version: "3.10"
+
+    # STEP 3: INSTALL PYTHON DEPENDENCIES INCLUDING PYTEST
+    - name: INSTALL DEPENDENCIES
+      run: |
+        python -m pip install --upgrade pip
+        pip install pytest
+
+    # STEP 4: RUN ALL TESTS USING PYTEST
+    - name: RUN TESTS WITH PYTEST
+      run: |
+        pytest
